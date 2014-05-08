@@ -1,0 +1,5 @@
+Diplom/bin/*
+Diplom/obj/*
+*.suo
+packages/*
+*.csproj.user
