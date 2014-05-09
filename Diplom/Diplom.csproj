@@ -52,29 +52,12 @@
     <StartupObject>RunCheck.RuncCheck</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\packages\ngit2.2.1.0.20130924\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="LibGit2Sharp">
       <HintPath>..\packages\LibGit2Sharp.0.17.0.0\lib\net35\LibGit2Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Posix">
-      <HintPath>..\packages\ngit2.2.1.0.20130924\lib\net40\Mono.Posix.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Security">
-      <HintPath>..\packages\ngit2.2.1.0.20130924\lib\net40\Mono.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Security.Win32">
-      <HintPath>..\packages\ngit2.2.1.0.20130924\lib\net40\Mono.Security.Win32.dll</HintPath>
-    </Reference>
-    <Reference Include="NSch">
-      <HintPath>..\packages\ngit2.2.1.0.20130924\lib\net40\NSch.dll</HintPath>
-    </Reference>
-    <Reference Include="Sharpen">
-      <HintPath>..\packages\ngit2.2.1.0.20130924\lib\net40\Sharpen.dll</HintPath>
-    </Reference>
-    <Reference Include="Sharpen.Unix">
-      <HintPath>..\packages\ngit2.2.1.0.20130924\lib\net40\Sharpen.Unix.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -144,9 +127,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Parameters.txt">
+    <None Include="Parameters.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
